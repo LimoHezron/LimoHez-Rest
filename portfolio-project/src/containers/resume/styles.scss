@@ -1,0 +1,162 @@
+.resume {
+    // background-color: #121212; /* Dark background */
+    color: var(--yellow-theme-sub-text-color);
+    padding: 20px;
+  
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      gap: 2rem;
+      padding: 20px 0;
+  
+      &__experience,
+      &__education {
+        flex: 1 1 45%; // flexible
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+  
+        &__header-text {
+          display: inline-block;
+          color: var(--yellow-theme-main-color); /* Gold */
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 1rem;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          border-bottom: 2px solid var(--yellow-theme-main-color);
+          margin-bottom: 10px;
+  
+          &::before,
+          &::after {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 5px;
+            background-color: var(--yellow-theme-main-color);
+            bottom: -1px;
+          }
+  
+          &::before {
+            left: 0;
+          }
+  
+          &::after {
+            right: 0;
+          }
+        }
+  
+        &__vertical-timeline-component {
+          padding: 0px 0px 30px 0;
+  
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+  
+        .vertical-timeline-element-title-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 6px;
+  
+          h3 {
+            font-size: 22px;
+            margin: 0;
+            font-weight: 700;
+            color: var(--yellow-theme-main-color); /* Gold */
+          }
+  
+          h4 {
+            font-size: 20px;
+            margin: 0;
+            font-weight: 600;
+            color: #e0e0e0; /* Light gray for subtitle */
+          }
+  
+          .vertical-timeline-element-title-wrapper-description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 10px;
+            color: var(--yellow-theme-sub-text-color);
+            font-weight: 400;
+          }
+        }
+  
+        .vertical-timeline-element-component {
+          box-shadow: none;
+        }
+  
+        /* Make sure the date is visible and professional */
+        .vertical-timeline-element-date {
+          font-size: 18px;
+          color: var(--yellow-theme-main-color); /* Gold date */
+          font-weight: 600;
+        }
+  
+        /* Style the content box */
+        .vertical-timeline-element-content {
+        //   background-color: #1e1e1e !important; /* Card dark gray */
+          border: 1.5px solid var(--yellow-theme-main-color) !important;
+          color: var(--yellow-theme-sub-text-color);
+          padding: 15px;
+          border-radius: 8px;
+        }
+  
+        /* Optional: style the icon */
+        .vertical-timeline-element-icon {
+          background-color: #181818 !important;
+          border: 2px solid var(--yellow-theme-main-color) !important;
+          color: var(--yellow-theme-main-color);
+        }
+      }
+    }
+  }
+  
+  /* Responsive tweaks */
+  @media screen and (max-width: 1024px) {
+    .timeline {
+      flex-direction: column;
+      align-items: center;
+  
+      &__experience,
+      &__education {
+        width: 100%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .timeline {
+      padding: 10px;
+  
+      &__experience,
+      &__education {
+        &__header-text {
+          font-size: 22px;
+        }
+  
+        .vertical-timeline-element-title-wrapper {
+          h3 {
+            font-size: 20px;
+          }
+  
+          h4 {
+            font-size: 18px;
+          }
+  
+          .vertical-timeline-element-title-wrapper-description {
+            font-size: 17px;
+          }
+        }
+  
+        .vertical-timeline-element-date {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  

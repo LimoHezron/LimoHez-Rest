@@ -18,7 +18,7 @@ const data = [
     to: "/skills",
   },
   {
-    label: "RUSEME",
+    label: "RESUME",
     to: "/resume",
   },
   {
@@ -35,6 +35,9 @@ const Navbar = () => {
   const handleToggleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
+  const handleLinkClick = () => {
+    setToggleIcon(false);
+  };
   return (
     <div>
       <nav className="navbar">
@@ -49,6 +52,7 @@ const Navbar = () => {
               <Link
                 className="navbar__container__menu__item__links"
                 to={item.to}
+                onClick={handleLinkClick}
               >
                 {item.label}
               </Link>
