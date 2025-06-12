@@ -1,0 +1,6 @@
+https://limo-hez.vercel.app/
+https://limo-hez.vercel.app/about
+https://limo-hez.vercel.app/resume
+https://limo-hez.vercel.app/skills 
+https://limo-hez.vercel.app/portfolio
+https://limo-hez.vercel.app/contact
