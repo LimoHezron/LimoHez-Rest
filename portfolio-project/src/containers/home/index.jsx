@@ -17,6 +17,7 @@ function Home() {
           name="Keywords"
           content="Hezron,Limo, React, Frontend Developer, Portfolio"
         />
+        <meta name="google-site-verification" content="9bCub9jH5Kvhr25ZXe2i1a2p6-VSoMSnni5ch6rvzqw" />
       </Helmet>
       <div>
         <h1>Home Page</h1>
