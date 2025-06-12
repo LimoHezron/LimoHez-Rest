@@ -1,7 +1,30 @@
 import React from "react";
 import "./styles.scss";
 import { useNavigate } from "react-router-dom";
-import {Animate} from "react-simple-animate"
+import { Animate } from "react-simple-animate";
+import { Helmet } from "react-helmet";
+
+function Home() {
+  return (
+    <>
+      <Helmet>
+        <title>Hezron Limo | Home</title>
+        <meta
+          name="description"
+          content="Welcome to the portfolio of Hezron Limo, a skilled React Frontend Developer"
+        />
+        <meta
+          name="Keywords"
+          content="Hezron,Limo, React, Frontend Developer, Portfolio"
+        />
+      </Helmet>
+      <div>
+        <h1>Home Page</h1>
+        {/* your content */}
+      </div>
+    </>
+  );
+}
 
 const Home = () => {
   const navigate = useNavigate();
@@ -18,19 +41,19 @@ const Home = () => {
         </h1>
       </div>
       <Animate
-      play
-      duration={1.5}
-      delay={1}
-      start={{
-        transform : 'translateY(550px)'
-      }}
-      end={{
-        transform : 'translateX(0px)'
-      }}
+        play
+        duration={1.5}
+        delay={1}
+        start={{
+          transform: "translateY(550px)",
+        }}
+        end={{
+          transform: "translateX(0px)",
+        }}
       >
-      <div className="home__contact-me">
-        <button onClick={handleNavigateToContactMePage}>Hire me</button>
-      </div>
+        <div className="home__contact-me">
+          <button onClick={handleNavigateToContactMePage}>Hire me</button>
+        </div>
       </Animate>
     </section>
   );

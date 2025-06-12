@@ -6,6 +6,22 @@ import { Animate } from "react-simple-animate";
 import "./styles.scss";
 import { DiApple, DiAndroid } from "react-icons/di";
 import { FaDev, FaDatabase } from "react-icons/fa";
+import { Helmet } from "react-helmet";
+
+function About(){
+  return(
+    <>
+    <Helmet>
+      <title>About Hezron Limo</title>
+      <meta name="description" content="Learn more about Hezron Limo — his experience, skills, and education."/>
+    </Helmet>
+    <div>
+      <h1>About Me</h1>
+      {/* {} */}
+    </div>
+    </>
+  )
+}
 
 const personalDetails = [
   {
