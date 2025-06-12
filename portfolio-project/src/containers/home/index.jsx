@@ -4,29 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
 import { Helmet } from "react-helmet-async";
 
-function Home() {
-  return (
-    <>
-      <Helmet>
-        <title>Hezron Limo | Home</title>
-        <meta
-          name="description"
-          content="Welcome to the portfolio of Hezron Limo, a skilled React Frontend Developer"
-        />
-        <meta
-          name="Keywords"
-          content="Hezron,Limo, React, Frontend Developer, Portfolio"
-        />
-        <meta name="google-site-verification" content="9bCub9iH5Kvhr25ZXe2i1a2p6-VSoMSnni5ch6rvzqw" />
-      </Helmet>
-      <div>
-        <h1>Home Page</h1>
-        {/* your content */}
-      </div>
-    </>
-  );
-}
-
 const Home = () => {
   const navigate = useNavigate();
   const handleNavigateToContactMePage = () => {
