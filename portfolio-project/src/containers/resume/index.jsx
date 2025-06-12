@@ -6,9 +6,17 @@ import 'react-vertical-timeline-component/style.min.css'
 import { data } from './utils';
 import './styles.scss';
 import {MdWork} from 'react-icons/md'
+import {Helmet} from 'react-helmet-async'
 
 const Resume = () => {
   return (
+    <>
+    <Helmet>
+    <title>Resume | Hezron Limo - Frontend Developer</title>
+  <meta name="description" content="Get the resume of Hezron Limo, a frontend developer with skills in React, Sass, and responsive UI development." />
+  <meta name="keywords" content="Hezron Limo resume, frontend developer resume, React developer CV" />
+    <link rel="canonical" href="/resume" />
+    </Helmet>
     <section id="resume" className="resume">
       <PageHeaderContent
         headerText="My Resume"
@@ -93,6 +101,7 @@ const Resume = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

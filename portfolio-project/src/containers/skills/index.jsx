@@ -5,9 +5,17 @@ import { skillsData } from "./utils";
 import { Animate, AnimateKeyframes } from "react-simple-animate";
 import { Line } from "rc-progress";
 import "./styles.scss";
+import {Helmet} from 'react-helmet-async'
 
 const Skills = () => {
   return (
+    <>
+    <Helmet>
+    <title>Skills | Hezron Limo - React & Sass Developer</title>
+  <meta name="description" content="Explore the technical skills of Hezron Limo in frontend development, including React, Sass, JavaScript, and UI/UX design." />
+  <meta name="keywords" content="React, Sass, JavaScript, frontend developer skills, web development tools" />
+      <link rel="canonical" href="/skills" />
+    </Helmet>
     <section id="skills" className="skills">
       <PageHeaderContent
         headerText="My Skills"
@@ -57,6 +65,7 @@ const Skills = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 

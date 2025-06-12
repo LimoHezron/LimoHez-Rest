@@ -3,8 +3,16 @@ import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
 import "./styles.scss";
+import { Helmet } from "react-helmet-async";
 const Contact = () => {
   return (
+    <>
+    <Helmet>
+      <title>Contact | Hire Hezron Limo - React Developer</title>
+      <meta name="description" content="Get in touch with Hezron Limo for freelance or full-time frontend development opportunities. Reach out via email or social links."/>
+      <meta name="keywords" content="contact Hezron, hire React developer, frontend freelancer, Kenya developer" />
+      <link rel="canonical" href="/contact" />
+    </Helmet>
     <section id="contact" className="contact">
       <PageHeaderContent
         headerText="My Contact"
@@ -67,6 +75,7 @@ const Contact = () => {
         </Animate>
       </div>
     </section>
+    </>
   );
 };
 export default Contact;

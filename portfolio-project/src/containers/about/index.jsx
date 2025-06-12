@@ -6,22 +6,7 @@ import { Animate } from "react-simple-animate";
 import "./styles.scss";
 import { DiApple, DiAndroid } from "react-icons/di";
 import { FaDev, FaDatabase } from "react-icons/fa";
-import { Helmet } from "react-helmet";
-
-function About(){
-  return(
-    <>
-    <Helmet>
-      <title>About Hezron Limo</title>
-      <meta name="description" content="Learn more about Hezron Limo — his experience, skills, and education."/>
-    </Helmet>
-    <div>
-      <h1>About Me</h1>
-      {/* {} */}
-    </div>
-    </>
-  )
-}
+import {Helmet} from 'react-helmet-async'
 
 const personalDetails = [
   {
@@ -49,6 +34,13 @@ const jobsummary = `Seasoned and independent Front End Developers with 2 years o
 
 const About = () => {
   return (
+    <>
+    <Helmet>
+    <title>About | Hezron Limo - Frontend Developer</title>
+  <meta name="description" content="Hezron Limo is a frontend developer focused on building modern, responsive websites using React and Sass. Based in Kenya." />
+  <meta name="keywords" content="about Hezron Limo, frontend developer bio, React, Sass, Kenya developer" />
+      <link rel="canonical" href="/about" />
+    </Helmet>
     <section id="about" className="about">
       <PageHeaderContent
         headerText="About Me"
@@ -125,6 +117,7 @@ const About = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 export default About;

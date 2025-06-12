@@ -33,6 +33,13 @@ const Home = () => {
     navigate("/contact");
   };
   return (
+    <>
+    <Helmet>
+      <title> Hezron Limo | Home</title>
+      <meta name="description" content="Welcome to the Porfolio of Hezron Limo, a skilled React Frontend Developer."/>
+      <meta name="keyword" content="Hezron Limo, React, Frontend Developer, Portfolio"/>
+      <link rel="canonical" href="/" />
+    </Helmet>
     <section id="home" className="home">
       <div className="home__text-wrapper">
         <h1>
@@ -57,6 +64,7 @@ const Home = () => {
         </div>
       </Animate>
     </section>
+    </>
   );
 };
 export default Home;

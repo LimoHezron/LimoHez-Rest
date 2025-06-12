@@ -7,6 +7,7 @@ import ImageThree from "../../images/cod2.jpg";
 import ImageFour from "../../images/cod1.jpg";
 import ImageFive from "../../images/cod3.jpg";
 import "./styles.scss";
+import {Helmet} from 'react-helmet-async'
 
 const portfolioData = [
   {
@@ -76,6 +77,13 @@ function handleHover(index){
       : portfolioData.filter((item) => item.id === filteredvalue);
 
   return (
+    <>
+    <Helmet>
+      <title>HPortfolio | Hezron Limo - React Projects</title>
+      <meta name="description" content="Browse Hezron Limo’s frontend projects built with React, Sass, and modern design techniques. Live demos and source code included."/>
+      <meta name="keywords" content="React portfolio, frontend projects, web apps, JavaScript, Sass, project showcase" />
+      <link rel="canonical" href="/portfolio" />
+    </Helmet>
     <section id="portfolio" className="portfolio">
       <PageHeaderContent
         headerText="My Portfolio"
@@ -122,6 +130,7 @@ function handleHover(index){
         </div>
       </div>
     </section>
+    </>
   );
 };
 export default Portfolio;
