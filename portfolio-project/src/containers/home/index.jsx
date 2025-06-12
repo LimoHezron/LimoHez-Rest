@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.scss";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   return (
@@ -17,6 +17,7 @@ function Home() {
           name="Keywords"
           content="Hezron,Limo, React, Frontend Developer, Portfolio"
         />
+        <meta name="google-site-verification" content="9bCub9iH5Kvhr25ZXe2i1a2p6-VSoMSnni5ch6rvzqw" />
       </Helmet>
       <div>
         <h1>Home Page</h1>
